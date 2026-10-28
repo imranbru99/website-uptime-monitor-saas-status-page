@@ -1,0 +1,167 @@
+<?php
+
+namespace App\Domain\Reports\Services;
+
+use App\Domain\Analytics\Services\UptimeCalculator;
+use App\Domain\Tenancy\Models\Tenant;
+use ImranDev\UnicodePdf\Facades\UnicodePdf;
+
+class ReportGenerator
+{
+    public function __construct(
+        protected UptimeCalculator $uptimeCalculator
+    ) {}
+
+    /**
+     * Generate an HTML/PDF Uptime Summary Report.
+     */
+    public function generateUptimeHtml(Tenant $tenant, string $period = '30d', string $locale = 'en'): string
+    {
+        $monitors = $tenant->monitors()->with(['latestCheck'])->get();
+        $meanTimes = $this->uptimeCalculator->calculateMeanTimes($tenant);
+
+        $direction = in_array($locale, ['ar', 'fa', 'he', 'ur']) ? 'rtl' : 'ltr';
+
+        $html = "<!DOCTYPE html>
+<html dir=\"{$direction}\" lang=\"{$locale}\">
+<head>
+    <meta charset=\"UTF-8\">
+    <title>Uptime Reliability Report - {$tenant->name}</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; color: #1e293b; background: #fff; line-height: 1.5; }
+        .header { border-bottom: 2px solid #0284c7; padding-bottom: 15px; margin-bottom: 25px; display: flex; justify-content: space-between; align-items: center; }
+        .brand { font-size: 24px; font-weight: bold; color: #0284c7; }
+        .meta { font-size: 13px; color: #64748b; }
+        .summary-cards { display: table; width: 100%; margin-bottom: 30px; }
+        .card { display: table-cell; width: 25%; background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px; border-radius: 6px; text-align: center; }
+        .card .num { font-size: 22px; font-weight: bold; color: #0f172a; margin-top: 5px; }
+        .card .label { font-size: 11px; text-transform: uppercase; color: #64748b; letter-spacing: 0.5px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 13px; }
+        th { background: #f1f5f9; padding: 10px; text-align: left; border: 1px solid #cbd5e1; font-weight: 600; }
+        td { padding: 10px; border: 1px solid #e2e8f0; }
+        .badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; }
+        .badge-healthy { background: #dcfce7; color: #166534; }
+        .badge-down { background: #fee2e2; color: #991b1b; }
+        .badge-degraded { background: #fef3c7; color: #92400e; }
+        .footer { margin-top: 40px; font-size: 11px; color: #94a3b8; text-align: center; border-top: 1px solid #e2e8f0; padding-top: 15px; }
+    </style>
+</head>
+<body>
+    <div class=\"header\">
+        <div>
+            <div class=\"brand\">Website Uptime Monitor</div>
+            <div class=\"meta\">Organization: <strong>{$tenant->name}</strong> | Period: Last 30 Days</div>
+        </div>
+        <div style=\"text-align: right;\" class=\"meta\">
+            Generated: ".now()->toFormattedDateString()."<br>
+            Powered by Imran Ahmed (https://imrandev.bd)
+        </div>
+    </div>
+
+    <div class=\"summary-cards\">
+        <div class=\"card\">
+            <div class=\"label\">Monitors Tracked</div>
+            <div class=\"num\">{$monitors->count()}</div>
+        </div>
+        <div class=\"card\">
+            <div class=\"label\">Average MTTD</div>
+            <div class=\"num\">{$meanTimes['mttd_minutes']}m</div>
+        </div>
+        <div class=\"card\">
+            <div class=\"label\">Average MTTR</div>
+            <div class=\"num\">{$meanTimes['mttr_minutes']}m</div>
+        </div>
+        <div class=\"card\">
+            <div class=\"label\">Total Incidents</div>
+            <div class=\"num\">{$meanTimes['total_incidents']}</div>
+        </div>
+    </div>
+
+    <h3 style=\"margin-top: 30px; margin-bottom: 10px;\">Monitored Service Inventory & Performance</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Service Name</th>
+                <th>Type</th>
+                <th>Target Endpoint</th>
+                <th>Status</th>
+                <th>24h Uptime</th>
+                <th>30d Uptime</th>
+                <th>Avg Latency</th>
+            </tr>
+        </thead>
+        <tbody>";
+
+        foreach ($monitors as $m) {
+            $badgeClass = match ($m->status) {
+                'healthy' => 'badge-healthy',
+                'down' => 'badge-down',
+                default => 'badge-degraded',
+            };
+
+            $html .= "<tr>
+                <td><strong>{$m->name}</strong></td>
+                <td><span style=\"text-transform: uppercase; font-size: 11px;\">{$m->monitor_type}</span></td>
+                <td><code>{$m->target}</code></td>
+                <td><span class=\"badge {$badgeClass}\">{$m->status}</span></td>
+                <td>{$m->uptime_percentage_24h}%</td>
+                <td>{$m->uptime_percentage_30d}%</td>
+                <td>{$m->avg_latency_ms} ms</td>
+            </tr>";
+        }
+
+        $html .= '</tbody>
+    </table>
+
+    <div class="footer">
+        CONFIDENTIAL & PROPRIETARY — Generated by Website Uptime Monitor SaaS Platform. https://imrandev.bd
+    </div>
+</body>
+</html>';
+
+        return $html;
+    }
+
+    /**
+     * Generate PDF using UnicodePdf engine.
+     */
+    public function generateUptimePdf(Tenant $tenant, string $period = '30d', string $locale = 'en')
+    {
+        $html = $this->generateUptimeHtml($tenant, $period, $locale);
+
+        return UnicodePdf::loadHtml($html);
+    }
+
+    /**
+     * Export monitor telemetry to CSV string.
+     */
+    public function exportMonitorsCsv(Tenant $tenant): string
+    {
+        $monitors = $tenant->monitors()->get();
+        $output = fopen('php://temp', 'r+');
+
+        fputcsv($output, ['ID', 'Name', 'Type', 'Target', 'Status', 'Interval (s)', '24h Uptime %', '7d Uptime %', '30d Uptime %', 'Avg Latency (ms)', 'Last Checked At']);
+
+        foreach ($monitors as $m) {
+            fputcsv($output, [
+                $m->id,
+                $m->name,
+                $m->monitor_type,
+                $m->target,
+                $m->status,
+                $m->check_interval_seconds,
+                $m->uptime_percentage_24h,
+                $m->uptime_percentage_7d,
+                $m->uptime_percentage_30d,
+                $m->avg_latency_ms,
+                $m->last_checked_at?->toIso8601String() ?? 'Never',
+            ]);
+        }
+
+        rewind($output);
+        $csv = stream_get_contents($output);
+        fclose($output);
+
+        return $csv;
+    }
+}

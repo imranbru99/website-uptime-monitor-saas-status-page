@@ -1,0 +1,61 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: [ "main", "master", "develop" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  laravel-tests:
+    name: PHP ${{ matrix.php }} - L${{ matrix.laravel }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        php: [8.3, 8.4]
+        laravel: [12.*, 13.*]
+        dependency-version: [prefer-stable]
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php }}
+        extensions: mbstring, xml, ctype, iconv, intl, pdo, sqlite, pdo_sqlite, bcmath, curl, zip, gd
+        coverage: none
+
+    - name: Get Composer Cache Directory
+      id: composer-cache
+      run: |
+        echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+
+    - name: Cache Composer dependencies
+      uses: actions/cache@v4
+      with:
+        path: ${{ steps.composer-cache.outputs.dir }}
+        key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+        restore-keys: ${{ runner.os }}-composer-
+
+    - name: Install Dependencies
+      run: |
+        composer install --prefer-dist --no-interaction --no-progress
+
+    - name: Prepare SQLite Database & App Key
+      run: |
+        touch database/database.sqlite
+        cp .env.example .env
+        php artisan key:generate
+
+    - name: Run Database Migrations & Sync
+      run: |
+        php artisan migrate --force
+        php artisan uptime:install --only-sync-modules
+
+    - name: Execute Automated Test Suite
+      run: |
+        php artisan test --compact

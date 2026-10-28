@@ -1,0 +1,145 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: uptime_monitor_app
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    environment:
+      APP_NAME: "Website Uptime Monitor"
+      APP_ENV: production
+      APP_DEBUG: "false"
+      APP_URL: "http://localhost:8000"
+      DB_CONNECTION: pgsql
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_DATABASE: uptime_monitor
+      DB_USERNAME: uptime_user
+      DB_PASSWORD: secret_password
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      QUEUE_CONNECTION: redis
+      CACHE_STORE: redis
+      SESSION_DRIVER: redis
+      MAIL_MAILER: smtp
+      MAIL_HOST: mailpit
+      MAIL_PORT: 1025
+      MAIL_FROM_ADDRESS: alerts@uptime.test
+      MAIL_FROM_NAME: "Website Uptime Monitor"
+      RUN_MIGRATIONS: "true"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    volumes:
+      - storage_data:/var/www/html/storage
+    networks:
+      - uptime_network
+
+  queue:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: uptime_monitor_queue
+    restart: unless-stopped
+    command: php /var/www/html/artisan queue:work redis --sleep=2 --tries=3 --timeout=120
+    environment:
+      APP_ENV: production
+      DB_CONNECTION: pgsql
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_DATABASE: uptime_monitor
+      DB_USERNAME: uptime_user
+      DB_PASSWORD: secret_password
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      QUEUE_CONNECTION: redis
+      RUN_MIGRATIONS: "false"
+    depends_on:
+      - app
+      - redis
+      - db
+    volumes:
+      - storage_data:/var/www/html/storage
+    networks:
+      - uptime_network
+
+  scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: uptime_monitor_scheduler
+    restart: unless-stopped
+    command: php /var/www/html/artisan schedule:work
+    environment:
+      APP_ENV: production
+      DB_CONNECTION: pgsql
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_DATABASE: uptime_monitor
+      DB_USERNAME: uptime_user
+      DB_PASSWORD: secret_password
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      RUN_MIGRATIONS: "false"
+    depends_on:
+      - app
+      - redis
+      - db
+    volumes:
+      - storage_data:/var/www/html/storage
+    networks:
+      - uptime_network
+
+  db:
+    image: postgres:16-alpine
+    container_name: uptime_monitor_postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: uptime_monitor
+      POSTGRES_USER: uptime_user
+      POSTGRES_PASSWORD: secret_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U uptime_user -d uptime_monitor"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - uptime_network
+
+  redis:
+    image: redis:7-alpine
+    container_name: uptime_monitor_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - uptime_network
+
+  mailpit:
+    image: axllent/mailpit:latest
+    container_name: uptime_monitor_mailpit
+    restart: unless-stopped
+    ports:
+      - "8025:8025" # Web UI
+      - "1025:1025" # SMTP Port
+    networks:
+      - uptime_network
+
+networks:
+  uptime_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  redis_data:
+  storage_data:
