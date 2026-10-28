@@ -51,3 +51,4 @@ If an external AI API key is not configured or an AI provider experiences rate l
 ### 2.4 Interactive AI Assistant Dashboard Page
 - Accessible inside the Business Owner Panel at `/app/ai-assistant-page`.
 - Provides an interactive AI console to query system health, analyze latency anomalies, and review draft incident statements before publishing.
+

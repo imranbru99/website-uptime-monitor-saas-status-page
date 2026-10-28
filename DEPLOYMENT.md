@@ -190,3 +190,4 @@ Run the automated data retention pruning command periodically to prevent unbound
 php artisan uptime:retention --days=90
 ```
 This prunes raw check samples while aggregated uptime, incident timelines, and SLA compliance metrics remain intact permanently.
+

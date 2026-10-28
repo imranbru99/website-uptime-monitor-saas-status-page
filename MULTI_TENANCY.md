@@ -94,3 +94,4 @@ Users can belong to multiple tenants via the pivot table `tenant_user`:
 - `site_reliability_engineer`: Create/edit monitors, acknowledge incidents, manage on-call schedules, create maintenance windows.
 - `viewer`: Read-only access to monitoring dashboards, incident timelines, and SLA reports.
 - `client_contact`: Read-only access restricted to agency-shared monitors within the `/client` portal.
+

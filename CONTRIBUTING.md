@@ -69,3 +69,4 @@ Never commit with generic agent identities or mismatched email addresses.
 2. Write clean code and verify tests.
 3. Commit your changes with clear, descriptive commit messages under `Imran Ahmed <me@imrandev.bd>`.
 4. Push to your branch and open a Pull Request.
+

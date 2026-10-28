@@ -146,3 +146,4 @@ The `UptimeCalculator` computes high-precision operational percentiles:
 - **P95 & P99**: Captures tail latency and extreme edge cases.
 - **Rolling Average**: Latency is updated on each check using an exponential moving average:
   $$\text{New Average} = (\text{Current Average} \times 0.8) + (\text{Check Latency} \times 0.2)$$
+

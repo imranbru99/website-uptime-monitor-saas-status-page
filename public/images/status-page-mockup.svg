@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="100%" height="100%">
+  <defs>
+    <linearGradient id="spBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="statusGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="badgeShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#10B981" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Browser Frame -->
+  <rect width="1000" height="640" rx="12" fill="url(#spBg)" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Browser Title Bar -->
+  <rect width="1000" height="42" rx="12" fill="#0A0F1D"/>
+  <rect y="30" width="1000" height="12" fill="#0A0F1D"/>
+  <circle cx="22" cy="21" r="5.5" fill="#EF4444"/>
+  <circle cx="38" cy="21" r="5.5" fill="#F59E0B"/>
+  <circle cx="54" cy="21" r="5.5" fill="#10B981"/>
+  
+  <!-- Address Bar -->
+  <rect x="220" y="8" width="560" height="26" rx="6" fill="#1E293B" stroke="#334155" stroke-width="0.8"/>
+  <text x="236" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94A3B8">🔒 https://status.nimbuscloud.io — Official Public Status Dashboard</text>
+
+  <!-- Status Page Content Container -->
+  <g transform="translate(100, 70)">
+    <!-- Header -->
+    <rect x="0" y="0" width="44" height="44" rx="10" fill="#0284C7"/>
+    <text x="14" y="29" font-family="sans-serif" font-size="22" font-weight="900" fill="#FFFFFF">N</text>
+    <text x="56" y="22" font-family="sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">NimbusCloud Systems</text>
+    <text x="56" y="38" font-family="sans-serif" font-size="12" fill="#94A3B8">Real-time availability and incident transparency</text>
+
+    <!-- Header Actions -->
+    <rect x="650" y="6" width="150" height="32" rx="6" fill="#0284C7"/>
+    <text x="668" y="26" font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Subscribe to Updates</text>
+
+    <!-- All Systems Operational Banner -->
+    <g transform="translate(0, 64)" filter="url(#badgeShadow)">
+      <rect width="800" height="54" rx="8" fill="url(#statusGlow)"/>
+      <circle cx="28" cy="27" r="8" fill="#FFFFFF"/>
+      <path d="M 24 27 L 27 30 L 33 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="48" y="32" font-family="sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">All Systems Operational</text>
+      <text x="640" y="32" font-family="sans-serif" font-size="12" font-weight="700" fill="#ECFDF5">Updated 1 min ago</text>
+    </g>
+
+    <!-- Component Group 1: Core Platform Services -->
+    <g transform="translate(0, 142)">
+      <rect width="800" height="150" rx="8" fill="#0B1120" stroke="#1E293B"/>
+      
+      <!-- Group Title -->
+      <rect width="800" height="34" rx="8" fill="#0F172A"/>
+      <text x="16" y="22" font-family="sans-serif" font-size="12" font-weight="800" fill="#E2E8F0">CORE PLATFORM SERVICES</text>
+      <text x="710" y="22" font-family="sans-serif" font-size="11" font-weight="700" fill="#10B981">99.99% Uptime</text>
+
+      <!-- Component 1 -->
+      <g transform="translate(16, 46)">
+        <text x="0" y="16" font-family="sans-serif" font-size="13" font-weight="700" fill="#F8FAFC">REST API & Gateway</text>
+        <text x="690" y="16" font-family="sans-serif" font-size="12" font-weight="600" fill="#10B981">Operational</text>
+        
+        <!-- 90-Day Uptime Bars (Micro Visual) -->
+        <g transform="translate(0, 24)">
+          <!-- Render 45 mini bars -->
+          <rect x="0" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="17" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="34" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="51" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="68" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="85" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="102" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="119" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="136" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="153" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="170" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="187" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="204" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="221" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="238" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="255" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="272" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="289" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="306" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="323" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="340" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="357" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="374" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="391" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="408" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="425" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="442" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="459" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="476" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="493" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="510" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="527" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="544" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="561" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="578" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="595" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="612" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="629" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="646" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="663" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="680" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="697" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="714" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="731" width="15" height="16" rx="2" fill="#10B981"/>
+          <rect x="748" width="18" height="16" rx="2" fill="#10B981"/>
+        </g>
+        <text x="0" y="52" font-family="sans-serif" font-size="10" fill="#64748B">90 days ago</text>
+        <text x="350" y="52" font-family="sans-serif" font-size="10" font-weight="600" fill="#10B981">100.0% uptime</text>
+        <text x="736" y="52" font-family="sans-serif" font-size="10" fill="#64748B">Today</text>
+      </g>
+    </g>
+
+    <!-- Component Group 2: Edge & Storage -->
+    <g transform="translate(0, 310)">
+      <rect width="800" height="100" rx="8" fill="#0B1120" stroke="#1E293B"/>
+      
+      <rect width="800" height="34" rx="8" fill="#0F172A"/>
+      <text x="16" y="22" font-family="sans-serif" font-size="12" font-weight="800" fill="#E2E8F0">DATABASE & GLOBAL EDGE CDN</text>
+      <text x="710" y="22" font-family="sans-serif" font-size="11" font-weight="700" fill="#10B981">100% Operational</text>
+
+      <g transform="translate(16, 50)">
+        <text x="0" y="16" font-family="sans-serif" font-size="13" font-weight="700" fill="#F8FAFC">PostgreSQL Multi-Region Mesh</text>
+        <text x="690" y="16" font-family="sans-serif" font-size="12" font-weight="600" fill="#10B981">Operational</text>
+
+        <text x="0" y="34" font-family="sans-serif" font-size="11" fill="#64748B">Latency across all regions: 3.8ms • Verified from 8 probe locations</text>
+      </g>
+    </g>
+
+    <!-- Incident Timeline (Clean Status) -->
+    <g transform="translate(0, 430)">
+      <text x="0" y="20" font-family="sans-serif" font-size="16" font-weight="800" fill="#F8FAFC">Past Incidents & Maintenance</text>
+      
+      <g transform="translate(0, 34)">
+        <rect width="800" height="50" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="18" y="30" font-family="sans-serif" font-size="12" font-weight="600" fill="#94A3B8">✓ No outages or service disruptions reported in the last 90 days.</text>
+        <text x="660" y="30" font-family="sans-serif" font-size="11" font-weight="600" fill="#38BDF8">Incident Archive →</text>
+      </g>
+    </g>
+  </g>
+</svg>

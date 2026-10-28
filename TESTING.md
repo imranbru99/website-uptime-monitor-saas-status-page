@@ -48,3 +48,4 @@ Run tests with compact output:
 ```bash
 php artisan test --compact
 ```
+

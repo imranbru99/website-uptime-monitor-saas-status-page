@@ -146,3 +146,4 @@ The platform provides 5 isolated Filament v5 administration panels:
    - Outbound webhooks include an `X-Uptime-Signature` header computed as `sha256(payload, secret)` to ensure integrity and authenticity.
 4. **API Token Security**:
    - Sanctum Bearer tokens are hashed with SHA-256 before storage in `personal_access_tokens`.
+

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="roiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B132B"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FBBF24"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="360" rx="12" fill="url(#roiBg)" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <g transform="translate(40, 40)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" fill="#FFFFFF">Business Value, Time Savings & ROI Multiplier</text>
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#94A3B8">Transform infrastructure monitoring from an expensive cost center into a high-margin business advantage</text>
+  </g>
+
+  <!-- 4 Big ROI Impact Cards -->
+  <g transform="translate(40, 100)">
+    <!-- Card 1: Tool Consolidation Savings -->
+    <rect width="235" height="200" rx="10" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
+    <circle cx="36" cy="36" r="18" fill="#1E3A8A"/>
+    <text x="28" y="44" font-size="18" fill="#60A5FA">💰</text>
+    <text x="20" y="90" font-family="sans-serif" font-size="28" font-weight="900" fill="#38BDF8">$48,000+</text>
+    <text x="20" y="112" font-family="sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Annual Tool Consolidation</text>
+    <text x="20" y="132" font-family="sans-serif" font-size="11" fill="#94A3B8">Replaces 4 costly subscriptions:</text>
+    <text x="20" y="148" font-family="sans-serif" font-size="10" fill="#64748B">• Pingdom ($1,200/yr)</text>
+    <text x="20" y="162" font-family="sans-serif" font-size="10" fill="#64748B">• PagerDuty ($9,600/yr)</text>
+    <text x="20" y="176" font-family="sans-serif" font-size="10" fill="#64748B">• Statuspage.io ($3,600/yr)</text>
+    <text x="20" y="190" font-family="sans-serif" font-size="10" fill="#64748B">• Datadog Synthetics ($34k/yr)</text>
+
+    <!-- Card 2: Engineering Time Saved -->
+    <g transform="translate(260, 0)">
+      <rect width="235" height="200" rx="10" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
+      <circle cx="36" cy="36" r="18" fill="#065F46"/>
+      <text x="28" y="44" font-size="18" fill="#34D399">⏱️</text>
+      <text x="20" y="90" font-family="sans-serif" font-size="28" font-weight="900" fill="#10B981">15+ Hours</text>
+      <text x="20" y="112" font-family="sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Saved / Engineer / Week</text>
+      <text x="20" y="134" font-family="sans-serif" font-size="11" fill="#94A3B8">Automates tedious ops:</text>
+      <text x="20" y="152" font-family="sans-serif" font-size="11" fill="#CBD5E1">• 0 False Alarms to investigate</text>
+      <text x="20" y="170" font-family="sans-serif" font-size="11" fill="#CBD5E1">• AI writes incident drafts</text>
+      <text x="20" y="188" font-family="sans-serif" font-size="11" fill="#CBD5E1">• Auto-generated PDF postmortems</text>
+    </g>
+
+    <!-- Card 3: Agency Revenue Multiplier -->
+    <g transform="translate(520, 0)">
+      <rect width="235" height="200" rx="10" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
+      <circle cx="36" cy="36" r="18" fill="#78350F"/>
+      <text x="28" y="44" font-size="18" fill="#FDE68A">📈</text>
+      <text x="20" y="90" font-family="sans-serif" font-size="28" font-weight="900" fill="url(#goldGrad)">$5,000/mo</text>
+      <text x="20" y="112" font-family="sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">New Agency MRR Stream</text>
+      <text x="20" y="134" font-family="sans-serif" font-size="11" fill="#94A3B8">White-Label Client Portals:</text>
+      <text x="20" y="152" font-family="sans-serif" font-size="11" fill="#CBD5E1">• Charge clients $99-$299/mo</text>
+      <text x="20" y="170" font-family="sans-serif" font-size="11" fill="#CBD5E1">• Custom branded status pages</text>
+      <text x="20" y="188" font-family="sans-serif" font-size="11" fill="#CBD5E1">• Dedicated client login console</text>
+    </g>
+
+    <!-- Card 4: Rapid MTTR & Business Protection -->
+    <g transform="translate(780, 0)">
+      <rect width="240" height="200" rx="10" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
+      <circle cx="36" cy="36" r="18" fill="#4C1D95"/>
+      <text x="28" y="44" font-size="18" fill="#DDD6FE">🛡️</text>
+      <text x="20" y="90" font-family="sans-serif" font-size="28" font-weight="900" fill="#C084FC">94% Faster</text>
+      <text x="20" y="112" font-family="sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">MTTD & MTTR Recovery</text>
+      <text x="20" y="134" font-family="sans-serif" font-size="11" fill="#94A3B8">Prevent lost sales & churn:</text>
+      <text x="20" y="152" font-family="sans-serif" font-size="11" fill="#CBD5E1">• Multi-region instant alerts</text>
+      <text x="20" y="170" font-family="sans-serif" font-size="11" fill="#CBD5E1">• AI anomaly interpretation</text>
+      <text x="20" y="188" font-family="sans-serif" font-size="11" fill="#CBD5E1">• Customer trust through transparency</text>
+    </g>
+  </g>
+</svg>

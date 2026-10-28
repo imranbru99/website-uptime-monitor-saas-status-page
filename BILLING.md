@@ -34,3 +34,4 @@ Quota checks are performed synchronously in `App\Domain\Billing\Services\Billing
 
 - **Invoices**: Automatically generated for subscription renewals with unique sequential numbering (e.g., `INV-2026-0001`), tax rates, and PDF download capability via `imrandevbd/laravel-unicode-pdf`.
 - **Promotional Coupons**: Supports percentage discounts (e.g. `SUMMER20`) and fixed currency deductions, with maximum redemption counts and expiration dates.
+

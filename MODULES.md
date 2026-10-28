@@ -82,3 +82,4 @@ The platform is constructed around a dynamic 60-module modular architecture. Eac
 | 58 | `lead_capture_forms` | Lead Capture & Demo Requests | cms | Free | No | Enterprise sales request forms and customer inquiry intake. |
 | 59 | `automation_workflow_rules` | Automated Remediation Rules | automation | Business | No | Webhook and script execution triggers upon confirmed outage. |
 | 60 | `platform_operations_dashboard` | Platform Operations Dashboard | operations | Free | **Yes** | Real-time queue, probe node, and background worker telemetry. |
+

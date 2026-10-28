@@ -91,3 +91,4 @@ All critical operational events are immutably logged to `audit_logs`:
 - User permission adjustments and invitations.
 - Status page custom domain mappings.
 - Module activation and deactivation events.
+

@@ -47,3 +47,4 @@ In the 60-Module architecture, modules marked `allow_branch_override = true` can
 
 ### 2.3 Team-Based Alert Routing
 - Incidents detected on branch monitors route automatically to the branch's designated on-call schedules and response teams, preventing cross-region alert spam.
+

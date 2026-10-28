@@ -84,3 +84,4 @@ All accounts use the standard password: `password`
    - Observe the agency white-label client experience showing only client-assigned monitors.
 5. **Log in to `/branch`** with `branch@nimbuscloud.test`:
    - Observe regional branch monitoring scoped to US East infrastructure.
+

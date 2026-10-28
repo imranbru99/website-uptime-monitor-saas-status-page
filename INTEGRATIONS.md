@@ -62,3 +62,4 @@ All outbound HTTP webhooks include cryptographic verification headers:
 To prevent alert fatigue when a flapping target bounces between up and down:
 1. **Alert Cooldown Window**: Configurable on `AlertRule` (default: 30 minutes). Once an alert is sent, duplicate down notifications are throttled until cooldown expires.
 2. **Escalation Delay**: Delays secondary notifications (e.g. SMS / Teams) until an incident has remained unacknowledged for $N$ minutes.
+

@@ -141,3 +141,4 @@ Inspect worker queues and probe nodes:
 ```bash
 php artisan uptime:worker-status
 ```
+
