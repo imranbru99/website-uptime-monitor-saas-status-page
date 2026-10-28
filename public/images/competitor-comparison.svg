@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="compBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B132B"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="highlightGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="480" rx="12" fill="url(#compBg)" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <g transform="translate(40, 40)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" fill="#FFFFFF">Platform Capability & Vendor Comparison</text>
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#94A3B8">How Website Uptime Monitor delivers 10x the features at 1/10th the cost of fragmented vendor stacks</text>
+  </g>
+
+  <!-- Table Header -->
+  <g transform="translate(40, 90)">
+    <rect width="1020" height="42" rx="6" fill="#0F172A" stroke="#1E293B"/>
+    <text x="20" y="26" font-family="sans-serif" font-size="12" font-weight="700" fill="#94A3B8">FEATURE / CAPABILITY</text>
+    <text x="340" y="26" font-family="sans-serif" font-size="12" font-weight="800" fill="#38BDF8">WEBSITE UPTIME MONITOR</text>
+    <text x="600" y="26" font-family="sans-serif" font-size="12" font-weight="700" fill="#94A3B8">BETTERSTACK</text>
+    <text x="750" y="26" font-family="sans-serif" font-size="12" font-weight="700" fill="#94A3B8">PAGERDUTY</text>
+    <text x="900" y="26" font-family="sans-serif" font-size="12" font-weight="700" fill="#94A3B8">DATADOG</text>
+
+    <!-- Column Highlight for Our Platform -->
+    <rect x="320" y="42" width="250" height="320" fill="url(#highlightGrad)" stroke="#0284C7" stroke-width="1.5" rx="6"/>
+
+    <!-- Row 1: Self-Hosted & 100% Data Sovereignty -->
+    <g transform="translate(0, 48)">
+      <line x1="0" y1="36" x2="1020" y2="36" stroke="#1E293B"/>
+      <text x="20" y="24" font-family="sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">Self-Hosted & Complete Data Sovereignty</text>
+      <text x="340" y="24" font-family="sans-serif" font-size="13" font-weight="800" fill="#10B981">✓ Included (100% Private)</text>
+      <text x="600" y="24" font-family="sans-serif" font-size="12" fill="#EF4444">✕ Cloud Only</text>
+      <text x="750" y="24" font-family="sans-serif" font-size="12" fill="#EF4444">✕ Cloud Only</text>
+      <text x="900" y="24" font-family="sans-serif" font-size="12" fill="#EF4444">✕ Cloud Only</text>
+    </g>
+
+    <!-- Row 2: Multi-Tenant SaaS & White-Label Agency -->
+    <g transform="translate(0, 88)">
+      <line x1="0" y1="36" x2="1020" y2="36" stroke="#1E293B"/>
+      <text x="20" y="24" font-family="sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">White-Label Client Portals (/client)</text>
+      <text x="340" y="24" font-family="sans-serif" font-size="13" font-weight="800" fill="#10B981">✓ Native Built-In Portal</text>
+      <text x="600" y="24" font-family="sans-serif" font-size="12" fill="#F59E0B">⚠️ Expensive Add-on</text>
+      <text x="750" y="24" font-family="sans-serif" font-size="12" fill="#EF4444">✕ Not Supported</text>
+      <text x="900" y="24" font-family="sans-serif" font-size="12" fill="#EF4444">✕ Not Supported</text>
+    </g>
+
+    <!-- Row 3: 60 Dynamic Modules Registry -->
+    <g transform="translate(0, 128)">
+      <line x1="0" y1="36" x2="1020" y2="36" stroke="#1E293B"/>
+      <text x="20" y="24" font-family="sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">60 Dynamic Configurable SaaS Modules</text>
+      <text x="340" y="24" font-family="sans-serif" font-size="13" font-weight="800" fill="#10B981">✓ 60 Modules (Zero Data Loss)</text>
+      <text x="600" y="24" font-family="sans-serif" font-size="12" fill="#64748B">~ Fixed Feature Set</text>
+      <text x="750" y="24" font-family="sans-serif" font-size="12" fill="#64748B">~ Fixed Alerts Only</text>
+      <text x="900" y="24" font-family="sans-serif" font-size="12" fill="#64748B">~ Complex Add-ons</text>
+    </g>
+
+    <!-- Row 4: AI Incident Copilot & Postmortems -->
+    <g transform="translate(0, 168)">
+      <line x1="0" y1="36" x2="1020" y2="36" stroke="#1E293B"/>
+      <text x="20" y="24" font-family="sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">AI Root Cause & Public Status Drafts</text>
+      <text x="340" y="24" font-family="sans-serif" font-size="13" font-weight="800" fill="#10B981">✓ Included (Laravel AI Hub)</text>
+      <text x="600" y="24" font-family="sans-serif" font-size="12" fill="#EF4444">✕ Limited</text>
+      <text x="750" y="24" font-family="sans-serif" font-size="12" fill="#F59E0B">⚠️ Premium AI Tier</text>
+      <text x="900" y="24" font-family="sans-serif" font-size="12" fill="#F59E0B">⚠️ $$$ Extra Cost</text>
+    </g>
+
+    <!-- Row 5: 5 Filament Administrative Panels -->
+    <g transform="translate(0, 208)">
+      <line x1="0" y1="36" x2="1020" y2="36" stroke="#1E293B"/>
+      <text x="20" y="24" font-family="sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">Multi-Branch & Regional Hierarchy</text>
+      <text x="340" y="24" font-family="sans-serif" font-size="13" font-weight="800" fill="#10B981">✓ 4-Tier Org Hierarchy</text>
+      <text x="600" y="24" font-family="sans-serif" font-size="12" fill="#EF4444">✕ Flat Teams Only</text>
+      <text x="750" y="24" font-family="sans-serif" font-size="12" fill="#F59E0B">⚠️ Enterprise Tier</text>
+      <text x="900" y="24" font-family="sans-serif" font-size="12" fill="#F59E0B">⚠️ Complex RBAC</text>
+    </g>
+
+    <!-- Row 6: Multi-Probe Zero False Alarms -->
+    <g transform="translate(0, 248)">
+      <line x1="0" y1="36" x2="1020" y2="36" stroke="#1E293B"/>
+      <text x="20" y="24" font-family="sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">Zero False Alarm Confirmation FSM</text>
+      <text x="340" y="24" font-family="sans-serif" font-size="13" font-weight="800" fill="#10B981">✓ 6-Stage State Machine</text>
+      <text x="600" y="24" font-family="sans-serif" font-size="12" fill="#10B981">✓ Supported</text>
+      <text x="750" y="24" font-family="sans-serif" font-size="12" fill="#64748B">N/A (Alerts Only)</text>
+      <text x="900" y="24" font-family="sans-serif" font-size="12" fill="#10B981">✓ Supported</text>
+    </g>
+
+    <!-- Row 7: Pricing & Monitor Limits -->
+    <g transform="translate(0, 288)">
+      <line x1="0" y1="36" x2="1020" y2="36" stroke="#1E293B"/>
+      <text x="20" y="24" font-family="sans-serif" font-size="12" font-weight="700" fill="#F8FAFC">Annual Cost for 200 Monitors</text>
+      <text x="340" y="24" font-family="sans-serif" font-size="14" font-weight="900" fill="#38BDF8">$0 (Self-Hosted) / One Plan</text>
+      <text x="600" y="24" font-family="sans-serif" font-size="13" font-weight="700" fill="#EF4444">$4,800 / year</text>
+      <text x="750" y="24" font-family="sans-serif" font-size="13" font-weight="700" fill="#EF4444">$9,600 / year</text>
+      <text x="900" y="24" font-family="sans-serif" font-size="13" font-weight="700" fill="#EF4444">$38,000+ / year</text>
+    </g>
+  </g>
+</svg>

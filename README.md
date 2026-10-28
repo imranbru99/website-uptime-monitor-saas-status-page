@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="docs/images/hero-banner.jpg" alt="Website Uptime Monitor Hero Banner" width="100%" style="border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.6);" />
+  <img src="docs/images/hero-banner.jpg" alt="Website Uptime Monitor Hero Banner" width="100%" style="border-radius: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.6);" />
 </p>
 
 # Website Uptime Monitor — Enterprise SaaS Platform
 
 <p align="center">
-  <strong>The Ultimate All-in-One Infrastructure Observability, Synthetic Uptime Monitoring, Automated Incident Management, and Public Status Pages Platform</strong>
+  <strong>The Ultimate All-in-One Infrastructure Observability, Synthetic Uptime Monitoring, Automated Incident Management, and Public Status Pages SaaS</strong>
 </p>
 
 <p align="center">
@@ -19,66 +19,65 @@
 </p>
 
 <p align="center">
-  <strong>Developed & Engineered by <a href="https://imrandev.bd">Imran Ahmed</a></strong> • <a href="mailto:me@imrandev.bd">me@imrandev.bd</a> • <a href="https://imrandev.bd">https://imrandev.bd</a>
+  <strong>Architected & Engineered by <a href="https://imrandev.bd">Imran Ahmed</a></strong> • <a href="mailto:me@imrandev.bd">me@imrandev.bd</a> • <a href="https://imrandev.bd">https://imrandev.bd</a>
 </p>
 
 ---
 
-## 📑 Table of Contents
+## 📑 Complete Table of Contents
 
 1. [Executive Overview & Vision](#1-executive-overview--vision)
-2. [Massive Business Opportunities & ROI](#2-massive-business-opportunities--roi-why-its-a-game-changer)
-3. [Visual Tour & Interactive Dashboards](#3-visual-tour--interactive-dashboards)
-4. [5 Independent Filament v5 Panels](#4-5-independent-filament-v5-panels)
-5. [The 60 Dynamic SaaS Modules Registry](#5-the-60-dynamic-saas-modules-registry)
-6. [Supported Synthetic Monitoring Protocols](#6-supported-synthetic-monitoring-protocols-10-types)
-7. [Finite State Machine & Zero False Alarms](#7-finite-state-machine--zero-false-alarms)
-8. [Multi-Channel Notification Dispatch Mesh](#8-multi-channel-notification-dispatch-mesh)
-9. [Hardened SSRF Security Defense](#9-hardened-ssrf-security-defense)
-10. [AI Operations Center & Incident Copilot](#10-ai-operations-center--incident-copilot)
-11. [Multi-Tenant & Multi-Branch Enterprise Hierarchy](#11-multi-tenant--multi-branch-enterprise-hierarchy)
-12. [SLA / SLO Engine & Analytics](#12-sla--slo-engine--analytics)
-13. [Public & Private Status Page Builder](#13-public--private-status-page-builder)
-14. [Seeded Enterprise Demo Environments](#14-seeded-enterprise-demo-environments-instant-login)
-15. [Artisan CLI Automation Suite](#15-artisan-cli-automation-suite)
-16. [REST API Reference (v1)](#16-rest-api-reference-v1)
-17. [Package Integrations & Evaluator Matrix](#17-package-integrations--evaluator-matrix)
-18. [One-Click Installation & Quickstart](#18-one-click-installation--quickstart)
-19. [Docker Compose Stack](#19-docker-compose-stack)
-20. [Automated Test Suite & Verification](#20-automated-test-suite--verification)
-21. [Author Attribution & License](#21-author-attribution--license)
+2. [Massive Business Opportunities & ROI Multipliers](#2-massive-business-opportunities--roi-multipliers)
+3. [Concrete Time-Saving Analysis for 5 Business Profiles](#3-concrete-time-saving-analysis-for-5-business-profiles)
+4. [Platform Capability & Competitor Comparison](#4-platform-capability--competitor-comparison)
+5. [Visual Tour & Interactive Dashboards](#5-visual-tour--interactive-dashboards)
+6. [5 Independent Filament v5 Panels](#6-5-independent-filament-v5-panels)
+7. [The 60 Dynamic SaaS Modules Registry](#7-the-60-dynamic-saas-modules-registry)
+8. [Supported Synthetic Monitoring Protocols (10 Types)](#8-supported-synthetic-monitoring-protocols-10-types)
+9. [Finite State Machine & Zero False Alarms](#9-finite-state-machine--zero-false-alarms)
+10. [Automated Incident Lifecycle & Alert Mesh](#10-automated-incident-lifecycle--alert-mesh)
+11. [Hardened SSRF Security Defense](#11-hardened-ssrf-security-defense)
+12. [AI Operations Center & Incident Copilot](#12-ai-operations-center--incident-copilot)
+13. [Multi-Tenant & Multi-Branch Enterprise Hierarchy](#13-multi-tenant--multi-branch-enterprise-hierarchy)
+14. [Reliability Analytics & SLA/SLO Engine](#14-reliability-analytics--slaslo-engine)
+15. [Public & Private Status Page Builder](#15-public--private-status-page-builder)
+16. [Seeded Enterprise Demo Environments (Instant Login)](#16-seeded-enterprise-demo-environments-instant-login)
+17. [Artisan CLI Automation Suite](#17-artisan-cli-automation-suite)
+18. [REST API Reference (v1)](#18-rest-api-reference-v1)
+19. [Package Integrations & Evaluator Matrix](#19-package-integrations--evaluator-matrix)
+20. [One-Click Installation & Quickstart](#20-one-click-installation--quickstart)
+21. [Docker Compose Stack](#21-docker-compose-stack)
+22. [Automated Test Suite & Verification](#22-automated-test-suite--verification)
+23. [Author Attribution & License](#23-author-attribution--license)
 
 ---
 
 ## 1. Executive Overview & Vision
 
-**Website Uptime Monitor** is a complete, production-ready, enterprise-grade synthetic monitoring and incident response SaaS platform. It consolidates synthetic uptime checks, internal network probing, multi-channel alerting, SLA tracking, AI-assisted postmortems, and public status pages into a **single, unified control plane**.
+**Website Uptime Monitor** is a complete, production-ready, enterprise-grade synthetic monitoring, infrastructure observability, automated incident response, and public status pages platform.
 
-### The Problem It Solves
-Modern digital businesses, agencies, and enterprises are forced to stitch together 4 to 6 separate subscriptions:
-- **Pingdom / BetterUptime** for basic website checks ($100–$300/mo)
-- **PagerDuty / OpsGenie** for on-call rotations and alerting ($40–$80/user/mo)
-- **Statuspage.io** for customer communication ($300–$1,500/mo)
-- **Datadog Synthetics** for multi-step API & SSL checks ($500–$3,000/mo)
-
-**Website Uptime Monitor replaces all of them**, delivering superior modularity, sub-second precision, private network agents, customizable branch hierarchies, and complete data ownership.
+Engineered with a high-throughput **Modular Monolith** architecture in **Laravel 13** and **Filament v5** on **PHP 8.5**, the platform operates seamlessly as:
+1. **A Multi-Tenant SaaS Business**: Launch your own B2B monitoring service with automated billing, tiered quotas, and self-serve onboarding.
+2. **An Internal Enterprise Observability Platform**: Self-host behind corporate firewalls for 100% data sovereignty, air-gapped GDPR/HIPAA compliance, and private network agent deployment.
+3. **A White-Label Agency Service**: Offer high-margin 24/7 uptime monitoring to digital agency clients with branded client portals (`/client`).
+4. **A Multi-Branch Organization Platform**: Delegate infrastructure monitoring across regional branches, departments, and teams without cross-region noise.
 
 ```
 +-----------------------------------------------------------------------------------+
 |                                Client Applications                                |
 |  Public Status Pages  |  Customer Portal  |  Branch Console  |  Platform SuperAdmin|
 +-----------------------------------------------------------------------------------+
-                                          |
+                                          │
                                     HTTPS / WSS / API
-                                          |
+                                          │
 +-----------------------------------------------------------------------------------+
 |                        Modular Monolith Control Plane                             |
 |  Identity  | Tenancy  | Branches | Modules (60 Modules) | Monitoring & Probes     |
 |  Incidents | Alerts   | Status   | Analytics & SLA      | Automation & Integrations|
 |  Billing   | Assets   | AI Hub   | Reports & PDF Engine | CMS & Customer Service  |
 +-----------------------------------------------------------------------------------+
-       |                     |                      |                      |
-       v                     v                      v                      v
+       │                     │                      │                      │
+       ▼                     ▼                      ▼                      ▼
 +--------------+     +---------------+     +----------------+     +-----------------+
 |  PostgreSQL  |     | Redis Cluster |     | Probe Workers  |     | External APIs   |
 |  (Core Data) |     | (Queues/Cache)|     | (Distributed)  |     | (AI/Slack/Mail) |
@@ -87,61 +86,90 @@ Modern digital businesses, agencies, and enterprises are forced to stitch togeth
 
 ---
 
-## 2. Massive Business Opportunities & ROI (Why It's a Game Changer)
+## 2. Massive Business Opportunities & ROI Multipliers
 
 <p align="center">
   <img src="docs/images/roi-time-saver.svg" alt="Business Value, Time Savings & ROI Multiplier" width="100%" />
 </p>
 
-### 2.1 Astronomical Tool Consolidation Savings: $48,000+ / Year
-Instead of paying exorbitant per-monitor, per-user, or per-SMS fees across fragmented platforms, Website Uptime Monitor allows companies to self-host or manage their own SaaS instance with **unlimited monitors and zero per-seat tax**:
+### 2.1 Astronomical Tool Consolidation Savings ($48,000+ / Year)
+Modern tech companies are plagued by fragmented subscriptions:
+- **Pingdom / BetterStack**: $100–$350/mo for synthetic checks
+- **PagerDuty / OpsGenie**: $40–$80/user/mo for on-call rotation ($9,600/yr for 10 SREs)
+- **Statuspage.io**: $300–$1,500/mo for customer status communication
+- **Datadog Synthetics**: $500–$3,000/mo for multi-step API & SSL checks
+- **Cronitor / DeadManSnitch**: $50–$150/mo for heartbeat snitches
 
-| Cost Component | Fragmented Vendor Stack | Website Uptime Monitor | Annual Savings |
-| :--- | :--- | :--- | :--- |
-| **Synthetic Checks** (100 monitors) | Datadog ($18,000/yr) | **Included** | **$18,000** |
-| **On-Call & Escalation** (10 SREs) | PagerDuty ($9,600/yr) | **Included** | **$9,600** |
-| **Branded Status Pages** | Statuspage.io ($4,800/yr) | **Included** | **$4,800** |
-| **SSL & Heartbeat Snitches** | Cronitor + Pingdom ($2,400/yr)| **Included** | **$2,400** |
-| **AI Incident Summaries** | Custom OpenAI scripts ($3,600/yr)| **Included** (`laravel-ai-hub`) | **$3,600** |
-| **Total Annual Software Spend** | **$38,400 – $65,000+** | **$0 (Self-Hosted) / One Plan** | **$38,400 – $65,000+** |
+**Website Uptime Monitor consolidates all five into one platform**:
 
-### 2.2 Massive Engineering Time Saver: 15–20 Hours Saved / Engineer / Week
-- **Zero Alert Fatigue (0 False Alarms)**: Multi-probe verification ensures your on-call engineers are never awakened at 3:00 AM by transient ISP packet loss. Alerts trigger only when multiple probes confirm downtime.
-- **AI-Powered Incident Copilot**: Powered by `imrandevbd/laravel-ai-hub`, the system automatically interprets error codes, identifies likely root causes, drafts executive postmortems, and writes non-technical customer status updates in seconds.
-- **Automated Incident Recovery**: Probe mesh verifies when a service resumes normal response latencies and auto-resolves the open incident, restoring status page components automatically.
-- **Instant PDF Executive Reports**: Generate board-ready, multilingual Unicode PDF compliance and SLA audit reports in one click via `imrandevbd/laravel-unicode-pdf`.
+$$\text{Annual Direct Software Savings} = \$48,000\text{ to }\$120,000+\text{ every single year.}$$
 
-### 2.3 Unlocking High-Margin Agency MRR ($3,000 – $15,000/mo)
-Digital agencies, web developers, and MSPs can turn monitoring into a **lucrative recurring revenue engine**:
-- **White-Label Client Portal (`/client`)**: Brand the portal with your agency logo, custom domain, and colors.
-- **Client Retainers**: Charge clients $49–$299/month for 24/7 uptime monitoring, SLA guarantees, and priority incident response.
-- **Client Segregation**: Each client sees only their assigned websites, performance charts, and status pages.
-- **50 Clients @ $149/mo = $7,450/month in pure passive Monthly Recurring Revenue (MRR)**.
+### 2.2 Massive Engineering Time Savings (15–20 Hours / Engineer / Week)
+- **0 False Alarms (Zero Alert Fatigue)**: Our multi-probe confirmation state machine eliminates 3:00 AM wake-up calls caused by momentary ISP route flaps.
+- **AI-Powered Incident Copilot**: Powered by `imrandevbd/laravel-ai-hub`, the system diagnoses error codes, identifies probable root causes, drafts executive postmortems, and prepares customer status updates in under 10 seconds.
+- **Probe-Verified Auto-Recovery**: Resolves incidents and restores status page components automatically once consecutive probes verify service restoration.
+- **One-Click Multilingual PDF Executive Audits**: Generates board-ready, audit-compliant PDF reports in seconds via `imrandevbd/laravel-unicode-pdf`.
 
-### 2.4 Complete Data Privacy & Regulatory Sovereignty
-- 100% compliant with GDPR, HIPAA, and SOC 2.
-- No confidential internal staging URLs, internal bearer tokens, or corporate database connection strings are ever sent to third-party monitoring vendors.
+### 2.3 Unlocking High-Margin Agency MRR ($3,000 – $15,000 / Month)
+Turn your agency or web design business from one-off projects into recurring cash flow:
+- **White-Label Client Portal (`/client`)**: Brand the portal with your logo, colors, and custom domain.
+- **Package Retainers**: Add "24/7 Enterprise Monitoring & SLA Guarantee" to maintenance agreements for $99–$299/mo per client.
+- **50 Clients @ $149/mo = $7,450/month in 95% profit margin recurring revenue**.
 
 ---
 
-## 3. Visual Tour & Interactive Dashboards
+## 3. Concrete Time-Saving Analysis for 5 Business Profiles
 
-### 3.1 Business Owner Observability Console (`/app`)
-*Real-time multi-probe latency charts, live status indicators, instant "Check Now" triggers, and target inventories:*
+| Business Profile | Core Pain Points Addressed | Concrete Time & Cost Savings |
+| :--- | :--- | :--- |
+| **1. Solo Founders & Indie Hackers** | Cannot afford $500/mo enterprise monitoring stacks; stressed about database crashes or payment webhook failures while sleeping. | **Saves \$3,000+/yr**; instant Telegram/Discord push alerts when checkout breaks; set up in 5 minutes. |
+| **2. Fast-Growing Startups & SaaS** | Juggling 4 different dashboards; developers spending hours writing incident postmortems and replying to angry support tickets. | **Saves 15–20 hours/week** per DevOps engineer; AI writes postmortems and customer status page updates automatically. |
+| **3. Digital Agencies & MSPs** | Clients calling angrily when their websites go down; no centralized client observability dashboard. | **Adds \$5,000–\$15,000/mo recurring MRR** via `/client` portals; clients see their own uptime without touching agency settings. |
+| **4. High-Volume Ecommerce Brands** | A 15-minute checkout outage during Black Friday / Cyber Monday costs **\$75,000+** in lost revenue. | **Sub-second multi-region detection** alerts on-call responders in < 30 seconds; prevents cart abandonment and customer churn. |
+| **5. Global Enterprises & Holding Co.** | Rigid single-tenant tools cannot handle complex regional branches, holding subsidiaries, or GDPR/HIPAA data sovereignty. | **Saves \$100,000+/yr** in enterprise licensing; 4-tier organizational hierarchy (Tenant -> Branch -> Dept -> Team) with regional scoping. |
+
+---
+
+## 4. Platform Capability & Competitor Comparison
+
+<p align="center">
+  <img src="docs/images/competitor-comparison.svg" alt="Platform Capability & Vendor Comparison" width="100%" />
+</p>
+
+| Capability | Website Uptime Monitor | BetterStack | PagerDuty | Datadog | Uptime Kuma |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Self-Hosted & 100% Private** | **Yes (Complete Privacy)** | No (Cloud Only) | No (Cloud Only) | No (Cloud Only) | Yes |
+| **Multi-Tenant SaaS Ready** | **Yes (Single-DB Scoped)** | No | No | No | No |
+| **5 Dedicated Admin Panels** | **Yes (`/platform`, `/app`, `/branch`, `/client`, `/operations`)** | No (Single Dashboard) | No | No | No |
+| **White-Label Agency Portal** | **Yes (`/client`)** | Expensive Add-on | No | No | No |
+| **Dynamic 60-Module Registry**| **Yes (Zero Data Loss)** | No | No | No | No |
+| **AI Incident Copilot & RCA** | **Yes (`laravel-ai-hub`)** | Limited | $$$ Premium Tier | $$$ Extra Cost | No |
+| **SSRF Security Defense** | **Yes (RFC1918 + Cloud Block)** | Vendor Managed | N/A | Vendor Managed | Basic |
+| **10 Synthetic Check Types** | **Yes (HTTP, API, TCP, DNS, SSL, etc.)** | Yes | Alerts Only | Yes | Partial |
+| **Contractual SLA / SLO Engine**| **Yes (99.999% + MTTD/MTTR)** | Yes | Basic | Yes | No |
+| **Multi-Branch Hierarchy** | **Yes (Tenant -> Branch -> Team)** | No | Limited | Complex RBAC | No |
+| **Annual Cost (200 Targets)** | **$0 (Self-Hosted) / One Plan** | **$4,800 / year** | **$9,600 / year** | **$38,000+ / year** | Free (Single user) |
+
+---
+
+## 5. Visual Tour & Interactive Dashboards
+
+### 5.1 Business Owner Observability Console (`/app`)
+*Manage synthetic monitors, live latency graphs, active incidents, public status pages, alert policies, and the AI Operations Copilot:*
 
 <p align="center">
   <img src="docs/images/dashboard-mockup.svg" alt="Business Owner Dashboard Mockup" width="100%" style="border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
 </p>
 
-### 3.2 Public Status Page Builder (`/status/{slug}`)
-*Beautiful, dark/light mode public status pages with 90-day interactive uptime history bars, service groups, and email subscriber registration:*
+### 5.2 Public Status Page Builder (`/status/{slug}`)
+*Beautiful, mobile-responsive status pages with dark/light themes, 90-day interactive availability bars, service component grouping, and email subscriber intake:*
 
 <p align="center">
   <img src="docs/images/status-page-mockup.svg" alt="Public Status Page Mockup" width="100%" style="border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
 </p>
 
-### 3.3 Command Center & Global Network Mesh
-*Global probe points of presence across 8 regions with sub-second telemetry and multi-channel notifications:*
+### 5.3 Global Command Center & Network Operations Center (NOC)
+*Distributed probe mesh across 8 global points of presence with sub-second telemetry:*
 
 <p align="center">
   <img src="docs/images/command-center-preview.jpg" alt="Command Center NOC Preview" width="100%" style="border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
@@ -149,9 +177,13 @@ Digital agencies, web developers, and MSPs can turn monitoring into a **lucrativ
 
 ---
 
-## 4. 5 Independent Filament v5 Panels
+## 6. 5 Independent Filament v5 Panels
 
-Website Uptime Monitor provides 5 completely segregated administrative panels with independent route trees, navigation, and role-based permissions:
+<p align="center">
+  <img src="docs/images/panel-matrix.svg" alt="5 Independent Filament v5 Panels" width="100%" />
+</p>
+
+Website Uptime Monitor provides 5 segregated administrative panels with independent route trees, navigation groups, and role-based policies:
 
 ```
 [ Platform Admin: /platform ]      [ Business Owner: /app ]       [ Branch Ops: /branch ]
@@ -168,9 +200,9 @@ Probe Mesh Management             Alerts, Status, AI, Billing    Branch Team Sch
 ```
 
 1. **Platform Super Admin Panel (`/platform`)**:
-   - Manage multi-tenant accounts, subscription plans, global probe points of presence, and 60 system module defaults.
+   - Manage multi-tenant accounts, subscription plans, global probe mesh, and 60 system module defaults.
 2. **Business Owner Panel (`/app`)**:
-   - Day-to-day command center for tenant admins: configure monitors, incident triage, alert policies, status page editor, 60-module manager, reports, and AI assistant.
+   - Command center for tenant admins: configure monitors, incident triage, alert policies, status page editor, 60-module manager, reports, and AI assistant.
 3. **Branch Operations Panel (`/branch`)**:
    - Regional console for enterprise regional managers (e.g. US-East, EU-Central, APAC). Monitor branch-scoped targets without clutter.
 4. **Client Portal (`/client`)**:
@@ -180,9 +212,12 @@ Probe Mesh Management             Alerts, Status, AI, Billing    Branch Team Sch
 
 ---
 
-## 5. The 60 Dynamic SaaS Modules Registry
+## 7. The 60 Dynamic SaaS Modules Registry
 
 Every feature in the system is managed through a central dynamic registry ([`ModuleRegistry.php`](file:///home/imran/project/website-uptime-monitor-alerts-and-status-pages/app/Domain/Modules/Services/ModuleRegistry.php)). Features can be toggled per tenant or overridden per enterprise branch with **zero loss of data**:
+
+<details open>
+<summary><strong>Click to Expand / Collapse Complete 60-Module Matrix</strong></summary>
 
 | # | Slug | Module Name | Category | Plan Tier | Mandatory | Capabilities |
 |---|---|---|---|---|---|---|
@@ -247,11 +282,13 @@ Every feature in the system is managed through a central dynamic registry ([`Mod
 | 59 | `automation_workflow_rules` | Automated Remediation Rules | automation | Business | No | Webhook and script execution triggers upon confirmed outage. |
 | 60 | `platform_operations_dashboard` | Platform Operations Dashboard | operations | Free | **Yes** | Real-time queue, probe node, and background worker telemetry. |
 
+</details>
+
 ---
 
-## 6. Supported Synthetic Monitoring Protocols (10 Types)
+## 8. Supported Synthetic Monitoring Protocols (10 Types)
 
-Website Uptime Monitor performs real, non-mocked network probe checks across 10 specialized protocols:
+Website Uptime Monitor executes real, unmocked socket and HTTP transactions across 10 specialized probe protocols:
 
 1. **HTTP / HTTPS (`http`, `https`)**:
    - Validates response status codes (e.g. 200, 201, 204, 301).
@@ -279,7 +316,7 @@ Website Uptime Monitor performs real, non-mocked network probe checks across 10 
 
 ---
 
-## 7. Finite State Machine & Zero False Alarms
+## 9. Finite State Machine & Zero False Alarms
 
 To protect engineering teams from alert fatigue caused by momentary network blips, the monitoring engine uses a **6-Stage Finite State Machine (FSM)**:
 
@@ -319,7 +356,7 @@ To protect engineering teams from alert fatigue caused by momentary network blip
 
 ---
 
-## 8. Multi-Channel Notification Dispatch Mesh
+## 10. Automated Incident Lifecycle & Alert Mesh
 
 <p align="center">
   <img src="docs/images/incident-pipeline.svg" alt="Automated Incident Lifecycle & Alert Pipeline" width="100%" />
@@ -336,7 +373,7 @@ Website Uptime Monitor provides native dispatchers for 6 enterprise alert destin
 
 ---
 
-## 9. Hardened SSRF Security Defense
+## 11. Hardened SSRF Security Defense
 
 Because synthetic monitoring platforms allow users to enter arbitrary URLs, **Server-Side Request Forgery (SSRF)** is the primary threat vector. The system implements a defense-in-depth security guard ([`SSRFValidator.php`](file:///home/imran/project/website-uptime-monitor-alerts-and-status-pages/app/Domain/Monitoring/Services/SSRFValidator.php)):
 
@@ -349,7 +386,7 @@ Because synthetic monitoring platforms allow users to enter arbitrary URLs, **Se
 
 ---
 
-## 10. AI Operations Center & Incident Copilot
+## 12. AI Operations Center & Incident Copilot
 
 Powered by `imrandevbd/laravel-ai-hub` (v1.7.1) with seamless fallback adapters:
 
@@ -360,12 +397,12 @@ Powered by `imrandevbd/laravel-ai-hub` (v1.7.1) with seamless fallback adapters:
 
 ---
 
-## 11. Multi-Tenant & Multi-Branch Enterprise Hierarchy
+## 13. Multi-Tenant & Multi-Branch Enterprise Hierarchy
 
-### 11.1 Single-Database Tenancy
+### 13.1 Single-Database Tenancy
 Every tenant-owned model implements the `BelongsToTenant` trait. Eloquent queries are automatically constrained by `TenantScope` (`WHERE tenant_id = ?`), ensuring zero cross-tenant data leakage.
 
-### 11.2 Enterprise Organizational Structure
+### 13.2 Enterprise Organizational Structure
 ```
 +-------------------------------------------------------------+
 |                  Tenant (Parent Organization)               |
@@ -389,7 +426,7 @@ Every tenant-owned model implements the `BelongsToTenant` trait. Eloquent querie
 
 ---
 
-## 12. SLA / SLO Engine & Analytics
+## 14. Reliability Analytics & SLA/SLO Engine
 
 The mathematical [`UptimeCalculator`](file:///home/imran/project/website-uptime-monitor-alerts-and-status-pages/app/Domain/Analytics/Services/UptimeCalculator.php) computes high-speed reliability metrics:
 - **Uptime Percentage**: 99.999% precision calculations across 24h, 7d, 30d, 90d, or custom date ranges.
@@ -401,7 +438,7 @@ The mathematical [`UptimeCalculator`](file:///home/imran/project/website-uptime-
 
 ---
 
-## 13. Public & Private Status Page Builder
+## 15. Public & Private Status Page Builder
 
 - Custom subdomains or custom domains (e.g., `status.yourdomain.com`).
 - Light & dark mode with customizable brand accent colors and custom CSS.
@@ -412,7 +449,7 @@ The mathematical [`UptimeCalculator`](file:///home/imran/project/website-uptime-
 
 ---
 
-## 14. Seeded Enterprise Demo Environments (Instant Login)
+## 16. Seeded Enterprise Demo Environments (Instant Login)
 
 The platform comes pre-seeded with 4 distinct business models and 9 realistic user personas. Run `php artisan uptime:demo-seed` to populate the dataset. All accounts use password: `password`.
 
@@ -434,7 +471,7 @@ The platform comes pre-seeded with 4 distinct business models and 9 realistic us
 
 ---
 
-## 15. Artisan CLI Automation Suite
+## 17. Artisan CLI Automation Suite
 
 ```bash
 # 1. Initialize database, 60 modules, 8 probe locations & superadmin
@@ -458,7 +495,7 @@ php artisan uptime:retention --days=90
 
 ---
 
-## 16. REST API Reference (v1)
+## 18. REST API Reference (v1)
 
 Base URL: `https://your-domain.com/api/v1`  
 Authentication: `Authorization: Bearer <SANCTUM_TOKEN>`
@@ -481,7 +518,7 @@ Authentication: `Authorization: Bearer <SANCTUM_TOKEN>`
 
 ---
 
-## 17. Package Integrations & Evaluator Matrix
+## 19. Package Integrations & Evaluator Matrix
 
 | Package | Status | Architectural Role |
 | :--- | :--- | :--- |
@@ -495,7 +532,7 @@ Authentication: `Authorization: Bearer <SANCTUM_TOKEN>`
 
 ---
 
-## 18. One-Click Installation & Quickstart
+## 20. One-Click Installation & Quickstart
 
 ### Prerequisites
 - PHP 8.3 or 8.5+ with `pdo`, `redis`, `bcmath`, `curl`, `intl`, `gd`, `zip`
@@ -538,7 +575,7 @@ php artisan schedule:work
 
 ---
 
-## 19. Docker Compose Stack
+## 21. Docker Compose Stack
 
 The repository includes a production-grade `Dockerfile` and `docker-compose.yml` deploying:
 - **App Service**: PHP 8.3/8.5 FPM + Nginx (Port 8000)
@@ -561,7 +598,7 @@ Access:
 
 ---
 
-## 20. Automated Test Suite & Verification
+## 22. Automated Test Suite & Verification
 
 The platform includes an extensive automated test suite covering unit logic, security constraints, multi-tenant boundaries, and end-to-end business acceptance scenarios:
 
@@ -596,7 +633,7 @@ OK (25 tests, 78 assertions)
 
 ---
 
-## 21. Author Attribution & License
+## 23. Author Attribution & License
 
 **Website Uptime Monitor** was engineered by:
 
